@@ -1,0 +1,46 @@
+Aqui está o texto ajustado:
+
+---
+
+### No Git Bash
+
+**Se você não tem o Git instalado, acesse o site oficial do Git e faça o download.**
+
+Se acabou de instalar o Git e vai utilizá-lo pela primeira vez, é necessário configurar suas informações de usuário. Abra o Git Bash e execute os seguintes comandos:
+
+```bash
+$ git config --global user.name "Seu Nome"
+$ git config --global user.email seu.email@exemplo.com
+```
+
+Navegue até a pasta onde você deseja clonar a sua branch criada.
+
+Em seguida, encontre o endereço da branch que você deseja clonar no GitLab. 
+
+Para realizar o clone, utilize o comando `git clone` e insira o endereço que deseja clonar.
+
+Após o sucesso do clone, você verá que uma pasta foi criada na sua máquina no endereço especificado.
+
+Acesse a pasta via Git Bash e faça o checkout, um passo necessário para trabalhar com sua branch localmente. Isso é importante porque, quando você clona um repositório, a branch padrão é geralmente a "master", mas desejamos trabalhar na nossa branch.
+
+Após o checkout, você pode incluir seus arquivos no repositório.
+
+Execute o comando `git fetch`. Se você executar o comando `git status`, verá que há um arquivo a ser adicionado na branch remota.
+
+É necessário utilizar o comando `git add "nome do arquivo"` ou `git add .` para adicionar todos os arquivos listados.
+
+Após isso, podemos realizar o commit para efetivamente carregar a branch remota. Após o commit, execute o comando `git push`.
+
+### No GitLab
+
+Acesse a sua branch criada e verifique que o arquivo está disponível. Clique em "Create Merge Request".
+
+Mude para a branch "dev" em "Change Branches".
+
+Clique em "Compare Branches" e continue.
+
+Dê um nome ao seu commit, selecione o revisor e o destinatário (assignee).
+
+Submeta o seu merge request para que a pessoa responsável possa revisar e aplicar as mudanças.
+
+---
